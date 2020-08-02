@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+  Girly by FreeHTML5.co
+  Twitter: https://twitter.com/fh5co
+  Facebook: https://fb.com/fh5co
+  URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static',filename ='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename ='css/style.css')}}">
+  <title>Faizan</title>
+  <link rel="icon" href="{{ url_for('static',filename ='img/title_logo.png')}}" sizes="32x32" type="image/png" style="border-radius50%;">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md  fixed-top maine-menu">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"> <a class="nav-link" href="/">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/#about" tabindex="-1" aria-disabled="true">About</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/#activity" tabindex="-1" aria-disabled="true">Gallery</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/commissionpricing" tabindex="-1" aria-disabled="true">Commission Pricing</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/socialmedia" tabindex="-1" aria-disabled="true">Social Medial</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/store" tabindex="-1" aria-disabled="true">store</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid fh5co-home-banner">
+    <div class="card"> <img class="card-img" src="{{ url_for('static',filename ='img/banner-img.jpg')}}" alt="">
+      <div class="card-img-overlay">
+        <div class="container mb-5">
+          <footer class="container-fluid p-0 pr-0">
+            <div class="row mr-0 ml-0">
+              <div class="col-md-6 container text-center content-us">
+                <form name="sendMessage" action="/contact" method="post">
+                  <div class="contact-form" id="contact">
+                    <h4 style="color: green; background-color: lightgreen">{{tag}}</h4>
+                    <h3 class="text-uppercase">Contact me</h3>
+                    <input type="text" class="form-control" placeholder="Your Name" name="name" required="true">
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" required="true">
+                    <input type="number" class="form-control" placeholder="Your phon" name="phon" required="true">
+                    <textarea class="form-control" placeholder="Your Message" name="msg" required="true"></textarea>
+                    <button type="submit" value="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container-fluid fh5co-insta-feed activity">
+    <div class="container text-center">
+      <h2 class="mb-3">my Location</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8162175777384!2d72.52272641496727!3d22.99378468496763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85e967e0621f%3A0x6f5b9e1be2a54759!2sSketching%20and%20painting%20artist%20(%20Realistic%20illustrator)%20%40artistic_f.m_bros!5e0!3m2!1sen!2sin!4v1594569205759!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="container recent mt-2">
+      <h2 class="text-center d-block">Find me on social media</h2>
+      <div class="row social-links">
+        <ul class="nav mx-auto">
+          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/faizan.malek.12914" target="_blank"><img src="{{ url_for('static',filename ='img/facebook.png')}}" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/FmStyles1?s=09" target="_blank"><img src="{{ url_for('static',filename ='img/twitter.png')}}" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/socialmedia" target="_blank"><img src="{{ url_for('static',filename ='img/google-plus.png')}}" alt=""></a> </li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+  
+  
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="{{ url_for('static',filename ='js/jquery-3.3.1.slim.min.js')}}"></script> 
+  <script src="{{ url_for('static',filename ='js/popper.min.js')}}" ></script> 
+  <script src="{{ url_for('static',filename ='js/bootstrap.min.js')}}"></script> 
+  <script src="{{ url_for('static',filename ='js/owl.carousel.min.js')}}"></script> 
+  <script src="{{ url_for('static',filename ='js/main.js')}}"></script>
+
+</body>
+</html>

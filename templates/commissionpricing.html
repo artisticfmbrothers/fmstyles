@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<table class="table table-bordered container col-md-8" style="background-color: white">
+  <thead>
+    <tr>
+      <th scope="col">Paper size</th>
+      <th scope="col">person</th>
+      <th scope="">	black & white</th>
+      <th scope="col">color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" rowspan="2">A4</th>
+      <td>Single Person</td>
+      <td> 600 INR</td>
+      <td> 1000 INR</td>
+    </tr>
+    <tr>
+      <td scope="row">Double Person</td>
+      <td> 1000 INR</td>
+      <td> 1700 INR</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="2">A3</th>
+      <td>Single Person</td>
+      <td> 1000 INR</td>
+      <td> 1500 INR</td>
+    </tr>
+    <tr>
+      <td scope="row">Double Person</td>
+      <td> 1600 INR</td>
+      <td> 2400 INR</td>
+    </tr>	
+    <tr>
+      <th scope="row" rowspan="2">A2</th>
+      <td>Single Person</td>
+      <td> 1500 INR</td>
+      <td> 2200 INR</td>
+    </tr>
+    <tr>
+      <td scope="row">Double Person</td>
+      <td> 2200 INR</td>
+      <td> 3500 INR</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="2">A1</th>
+      <td>Single Person</td>
+      <td> 2000 INR</td>
+      <td> 3400 INR</td>
+    </tr>
+    <tr>
+      <td scope="row">Double Person</td>
+      <td> 3200 INR</td>
+      <td> 5600 INR</td>
+    </tr>
+  </tbody>
+</table>
+<div class="text-center d-block my-5">
+	<h2>Framing and courier charges are not included. The price may change according to detailing in the photo. The photo must be good in quality</h2>
+</div>
+
+
+
+
+ {% endblock %}
