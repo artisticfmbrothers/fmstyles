@@ -67,7 +67,6 @@ partd>=1.1.0
 Pillow>=7.1.1
 pipwin>=0.4.5
 plyer>=1.4.3
-post>=2019.4.13
 prettytable>=0.7.2
 psutil>=5.7.0
 public>=2019.4.13
