@@ -12,7 +12,7 @@ app.config.update(
     MAIL_PORT = '465',
     MAIL_USE_SSL = True,
     MAIL_USERNAME = 'artisticfmbrothers@gmail.com',
-    MAIL_PASSWORD = '8122001fmstyles'
+    MAIL_PASSWORD = '9723101350fm'
     )
 mail = Mail(app)
 '''app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/faizanproject'
